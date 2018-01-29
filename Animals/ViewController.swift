@@ -14,7 +14,7 @@ struct AnimalInfo {
     var description: String
 }
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITableViewDataSource {
 
     // MARK: - アウトレット
     @IBOutlet weak var tableView: UITableView!
@@ -33,6 +33,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+
+        tableView.dataSource = self
     }
 
     override func didReceiveMemoryWarning() {
@@ -40,6 +42,17 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    // MARK: - デリゲート : UITableViewDataSource
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return items.count
+    }
 
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        // 暗黙的アンラップにすることで、以降の処理でcellのまま使用できる
+        let cell: UITableViewCell! = tableView.dequeueReusableCell(withIdentifier: "NameCell")
+        let item = items[indexPath.row]
+        cell.textLabel?.text = item.name
+        return cell
+    }
 }
 
