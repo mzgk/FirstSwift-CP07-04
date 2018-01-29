@@ -11,11 +11,18 @@ import UIKit
 class DetailViewController: UIViewController {
 
     @IBOutlet weak var label: UILabel!
+
+    // 受け取る動物情報をプロパティとして定義
+    var info: AnimalInfo!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+
+        // 受け取った動物情報を表示する
+        navigationItem.title = info.name
+        label.text = info.description
     }
 
     override func didReceiveMemoryWarning() {

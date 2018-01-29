@@ -42,6 +42,14 @@ class ViewController: UIViewController, UITableViewDataSource {
         // Dispose of any resources that can be recreated.
     }
 
+    // セグエによる画面遷移時に呼び出される
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let selectedRow = tableView.indexPathForSelectedRow {
+            let controller = segue.destination as! DetailViewController
+            controller.info = items[selectedRow.row]
+        }
+    }
+
     // MARK: - デリゲート : UITableViewDataSource
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return items.count
