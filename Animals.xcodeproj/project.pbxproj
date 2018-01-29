@@ -12,6 +12,7 @@
 		326EEF2E201EF0DB004020B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 326EEF2C201EF0DB004020B3 /* Main.storyboard */; };
 		326EEF30201EF0DB004020B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 326EEF2F201EF0DB004020B3 /* Assets.xcassets */; };
 		326EEF33201EF0DB004020B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 326EEF31201EF0DB004020B3 /* LaunchScreen.storyboard */; };
+		326EEF3B201F00F5004020B3 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326EEF3A201F00F5004020B3 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		326EEF2F201EF0DB004020B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		326EEF32201EF0DB004020B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		326EEF34201EF0DB004020B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		326EEF3A201F00F5004020B3 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,12 +56,13 @@
 		326EEF27201EF0DB004020B3 /* Animals */ = {
 			isa = PBXGroup;
 			children = (
+				326EEF34201EF0DB004020B3 /* Info.plist */,
 				326EEF28201EF0DB004020B3 /* AppDelegate.swift */,
+				326EEF3A201F00F5004020B3 /* DetailViewController.swift */,
 				326EEF2A201EF0DB004020B3 /* ViewController.swift */,
-				326EEF2C201EF0DB004020B3 /* Main.storyboard */,
 				326EEF2F201EF0DB004020B3 /* Assets.xcassets */,
 				326EEF31201EF0DB004020B3 /* LaunchScreen.storyboard */,
-				326EEF34201EF0DB004020B3 /* Info.plist */,
+				326EEF2C201EF0DB004020B3 /* Main.storyboard */,
 			);
 			path = Animals;
 			sourceTree = "<group>";
@@ -136,6 +139,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				326EEF3B201F00F5004020B3 /* DetailViewController.swift in Sources */,
 				326EEF2B201EF0DB004020B3 /* ViewController.swift in Sources */,
 				326EEF29201EF0DB004020B3 /* AppDelegate.swift in Sources */,
 			);

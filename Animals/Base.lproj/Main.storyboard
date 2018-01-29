@@ -55,10 +55,10 @@
             </objects>
             <point key="canvasLocation" x="360.80000000000001" y="29.23538230884558"/>
         </scene>
-        <!--View Controller-->
+        <!--Detail View Controller-->
         <scene sceneID="7Cu-Hf-aYf">
             <objects>
-                <viewController id="3jm-v7-jT2" sceneMemberID="viewController">
+                <viewController id="3jm-v7-jT2" customClass="DetailViewController" customModule="Animals" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xE3-IH-cwJ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
